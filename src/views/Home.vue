@@ -9,7 +9,7 @@
         <a-card hoverable v-if="furniture.enabled">
           <img alt="furniture" :src="furniture.file"/>
           <template slot="actions" class="ant-card-actions">
-            <span>{{furniture.category}}
+            <span>
               <span>{{ furniture.price | currency }}</span>
             </span>
             <PlusMinusItem v-if="itemInCart(furniture.id)" :furniture="furniture" />
